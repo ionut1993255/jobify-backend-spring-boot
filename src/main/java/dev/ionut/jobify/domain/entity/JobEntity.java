@@ -42,6 +42,15 @@ public class JobEntity {
     @Column(name = "experience_level", nullable = false)
     private String experienceLevel;
 
-    @Embedded
-    private Company company;
+    @Column(name = "company_name", nullable = false)
+    private String companyName;
+
+    @Column(name = "company_description", nullable = false)
+    private String companyDescription;
+
+    @Column(name = "company_contact_email", nullable = false)
+    private String companyContactEmail;
+
+    @Column(name = "company_contact_phone", nullable = false)
+    private String companyContactPhone;
 }

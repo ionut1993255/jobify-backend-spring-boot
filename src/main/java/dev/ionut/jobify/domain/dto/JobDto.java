@@ -31,5 +31,11 @@ public class JobDto {
 
     private String experienceLevel;
 
-    private CompanyDto companyDto;
+    private String companyName;
+
+    private String companyDescription;
+
+    private String companyContactEmail;
+
+    private String companyContactPhone;
 }
