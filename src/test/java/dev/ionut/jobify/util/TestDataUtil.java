@@ -43,8 +43,7 @@ public final class TestDataUtil {
                 .companyContactPhone("987-654-3210")
                 .build();
     }
-
-
+    
     public static JobDto createTestJobDto() {
         return JobDto.builder()
                 .title("React Developer")

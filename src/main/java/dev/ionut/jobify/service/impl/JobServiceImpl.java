@@ -3,7 +3,7 @@ package dev.ionut.jobify.service.impl;
 import dev.ionut.jobify.domain.dto.JobDto;
 import dev.ionut.jobify.domain.entity.JobEntity;
 import dev.ionut.jobify.exception.ResourceNotFoundException;
-import dev.ionut.jobify.mapper.impl.JobMapper;
+import dev.ionut.jobify.mapper.Mapper;
 import dev.ionut.jobify.repository.JobRepository;
 import dev.ionut.jobify.service.JobService;
 import org.springframework.stereotype.Service;
@@ -16,9 +16,9 @@ public class JobServiceImpl implements JobService {
 
     private final JobRepository jobRepository;
 
-    private final JobMapper jobMapper;
+    private final Mapper<JobEntity, JobDto> jobMapper;
 
-    public JobServiceImpl(JobRepository jobRepository, JobMapper jobMapper) {
+    public JobServiceImpl(JobRepository jobRepository, Mapper<JobEntity, JobDto> jobMapper) {
         this.jobRepository = jobRepository;
         this.jobMapper = jobMapper;
     }
